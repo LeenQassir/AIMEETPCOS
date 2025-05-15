@@ -50,7 +50,7 @@ footer, header {visibility: hidden;}
 # --- Load the Trained Model ---
 @st.cache_resource
 def load_trained_model():
-return load_model("best_mobilenet_model.h5")
+  return load_model("best_mobilenet_model.h5")
 
 model = load_trained_model()
 

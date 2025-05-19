@@ -160,7 +160,7 @@ if patient_id and patient_name:
     prev_record = get_patient_record(patient_id)
 
 if prev_record and prev_record[1].strip().lower() != patient_name.lower():
-    st.warning(f"⚠️ Patient ID **{patient_id}** is already assigned to **{prev_record[1]}**. Name mismatch detected! Analysis is blocked.")
+    st.warning(f"⚠️ Patient ID **{patient_id}** is already assigned to another user. Name mismatch detected! Analysis is blocked.")
 else:
     uploaded_file = st.file_uploader("Upload an Ultrasound Image", type=["jpg", "jpeg", "png"])
 
